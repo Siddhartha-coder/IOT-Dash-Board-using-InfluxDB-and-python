@@ -37,14 +37,18 @@ Each graph continuously updates with the latest readings.
 1. Clone this repository:
    git clone https://github.com/yourusername/iot-dashboard.git
    cd iot-dashboard
+   
 Install required dependencies:
 pip install dash plotly pandas influxdb-client
+
 Update your InfluxDB credentials inside app.py:
 
-
 INFLUX_URL = "https://us-east-1-1.aws.cloud2.influxdata.com"
+
 INFLUX_TOKEN = "your_influx_token"
+
 INFLUX_ORG = "your_org"
+
 INFLUX_BUCKET = "Temp_data"
 
 Run the app:
