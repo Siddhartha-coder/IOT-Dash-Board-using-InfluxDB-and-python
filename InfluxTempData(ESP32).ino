@@ -6,11 +6,11 @@
 #include <DHT_U.h>
 
 // Project Macros
-#define WIFI_SSID             "Riley's network"
-#define WIFI_PASSWORD         "lilybloom"
+#define WIFI_SSID             "SSID Name"
+#define WIFI_PASSWORD         "SSID Password"
 #define INFLUXDB_URL          "https://us-east-1-1.aws.cloud2.influxdata.com/"
-#define INFLUXDB_TOKEN        "WH467Sv_0TlR9_IDCavYc-uhYAlfSUFqq3gFf3j0-JgRArdi0flLalcwVgnQQY-Lj-XRWrVQRYdRF2Mni5hiuw=="
-#define INFLUXDB_ORG          "vsiddhartha1730@gmail.com"
+#define INFLUXDB_TOKEN        "Your token"
+#define INFLUXDB_ORG          "Organization Name"
 #define INFLUXDB_BUCKET       "Temp_data"
 
 
@@ -25,7 +25,7 @@
 #define DHT11_REFRESH_TIME              (5000u)
 #define INFLUXDB_SEND_TIME              (10000u)
 
-// Priavate Variables
+//Private Variables
 
 // InfluxDB client instance with preconfigured InfluxCloud Certificate
 InfluxDBClient client(INFLUXDB_URL, INFLUXDB_ORG, INFLUXDB_BUCKET, INFLUXDB_TOKEN, InfluxDbCloud2CACert);
@@ -39,7 +39,7 @@ static uint8_t dht11_temperature = 0;
 static uint8_t dht11_humidity = 0u;
 DHT dht(DHTPIN, DHTTYPE);
 
-// Task Time related Variables
+// Task Time-related Variables
 static uint32_t dht_refresh_timestamp = 0u;
 static uint32_t influxdb_send_timestamp = 0u;
 
