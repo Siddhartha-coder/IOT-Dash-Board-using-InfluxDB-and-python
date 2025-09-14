@@ -8,7 +8,7 @@ import plotly.graph_objs as go
 # InfluxDB Configuration
 # -----------------------------
 INFLUX_URL = "https://us-east-1-1.aws.cloud2.influxdata.com"  # your cloud endpoint
-INFLUX_TOKEN = "rzbX7XPSU6kl6o_wdsEOnkNGz0f9RIh5faRIq9I9aN0RsT8yTuI8YJqI9z8vkAq6tcXaBN2GWbuTcsp8VJVqnA=="
+INFLUX_TOKEN = "Your Token"
 INFLUX_ORG = "DAQ Team"
 INFLUX_BUCKET = "Temp_data"
 
